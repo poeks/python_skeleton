@@ -10,6 +10,7 @@ config = {
     'download_url': 'http://github.com/poeks/project',
     'author_email': 'oslisloth@gmail.com',
     'version': '0.1',
+    'license': 'Apache 2.0',
     'install_requires': ['nose'],
     'packages': ['NAME'],
     'scripts': [],
