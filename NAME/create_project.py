@@ -5,9 +5,9 @@ project = raw_input("Name of project (Assuming desired path is '..'): ")
 pwd = os.environ['PWD']
 path = pwd + "/../" + project
 
-reserved = ["bin", "build", "data", "dist", "docs", "NAME", 
+reserved = ["bin", "build", "data", "dist", "docs", "NAME",
         "projectname.egg-info", "tests", "venv"]
-if not project.isalnum() or os.path.exists(path) or project in str(reserved): #any(project in s for s in reserved):
+if not project.isalnum() or os.path.exists(path) or project in str(reserved):
     print "Not a valid name"
     exit()
 
@@ -25,4 +25,6 @@ call(["mv", reponame + "-master", project])
 call(["mv", project, path])
 
 call(["rm", zipname])
+call(["rm", path + "/bin/create_project"])
+call(["rm", path + "/NAME/create_project.py"])
 call(["rm", reponame + "-master", "-rf"])
