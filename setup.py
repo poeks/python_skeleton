@@ -11,7 +11,7 @@ config = {
     'author_email': 'oslisloth@gmail.com',
     'version': '0.1',
     'license': 'Apache 2.0',
-    'install_requires': ['nose'],
+    'install_requires': ['nose', 'cement'],
     'packages': ['NAME'],
     'scripts': [],
     'name': 'projectname'
