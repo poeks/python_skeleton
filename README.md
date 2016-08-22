@@ -21,3 +21,5 @@ python setup.py install
 bin/cli --h # show all options
 bin/cli thing -f foo --debug # run example option with parameter foo`
 ~~~~
+
+* Write your code as usual!
