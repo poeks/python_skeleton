@@ -22,4 +22,4 @@ bin/cli --h # show all options
 bin/cli thing -f foo --debug # run example option with parameter foo`
 ~~~~
 
-* Write your code as usual!
+* Write your code as usual in `../projectname`!
